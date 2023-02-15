@@ -1,0 +1,238 @@
+@import "../fontawesome-free-6.3.0-web/css/fontawesome.min.css";
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+body nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: black;
+  color: white;
+  height: 100px;
+}
+body nav .search {
+  width: 70vh;
+}
+body nav .search .searchTerm {
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  border-radius: 15px;
+  outline: none;
+  color: #9DBFAF;
+}
+body .main {
+  display: flex;
+  height: 87vh;
+  width: 100%;
+}
+body .main .left {
+  min-height: 100%;
+  width: 20%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main .left .controllers {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+body .main .left .controllers .afterFirst {
+  margin-top: 2em;
+}
+body .main .left .controllers .beforeLast {
+  margin-bottom: 10em;
+}
+body .main .left .controllers li {
+  color: white;
+}
+body .main .left .controllers li button {
+  width: 180px;
+  height: 50px;
+  border-radius: 15px;
+  background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
+}
+body .main .left .controllers li a {
+  color: white;
+  font-size: 25px;
+}
+body .main .mid {
+  min-height: 100%;
+  width: 55%;
+  background-color: black;
+}
+body .main .mid .firstSection {
+  display: flex;
+  align-items: center;
+  gap: 6em;
+}
+body .main .mid .firstSection .totalBalance {
+  list-style: none;
+}
+body .main .mid .firstSection .totalBalance .balance {
+  font-size: 22px;
+  font-weight: 900;
+  color: white;
+}
+body .main .mid .firstSection .totalBalance .btcValue {
+  font-size: 29px;
+  font-weight: 700;
+  color: white;
+}
+body .main .mid .firstSection .totalBalance .price {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+body .main .mid .firstSection .other {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-inline: 1em;
+  height: 60px;
+  width: 400px;
+  background: #292727;
+  border-radius: 17px;
+}
+body .main .mid .firstSection .other li {
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+}
+body .main .mid .firstSection .other .portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 100px;
+  background: black;
+  border-radius: 17px;
+}
+body .main .mid .secondSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-right: 0.1em;
+}
+body .main .mid .secondSection img {
+  max-width: 70%;
+  max-height: 70%;
+}
+body .main .mid .thirdSection .thirdNav {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+body .main .mid .thirdSection .thirdNav h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+body .main .mid .thirdSection .jsp {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+body .main .mid .thirdSection .jsp div {
+  color: white;
+  height: 70px;
+  background: rgba(32, 35, 43, 0.7);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body .main .mid .thirdSection .jsp div ul {
+  list-style: none;
+}
+body .main .mid .thirdSection .jsp div button {
+  height: 40px;
+  width: 80px;
+  background-color: black;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+}
+body .main .right {
+  min-height: 100%;
+  width: 25%;
+  color: white;
+  background-color: black;
+}
+body .main .right .transac {
+  height: 50%;
+}
+body .main .right .transac h2 {
+  margin-left: 0.3em;
+}
+body .main .right .transac .mainUl {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: white;
+}
+body .main .right .transac .mainUl div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+body .main .right .transac .mainUl div ul {
+  color: white;
+  list-style: none;
+}
+body .main .right .assets h2 {
+  margin-top: 0.5em;
+  margin-left: 0.3em;
+}
+body .main .right .assets .buttons {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+body .main .right .assets .buttons button {
+  width: 90%;
+  height: 9.5em;
+  border-radius: 15px;
+}
+body .main .right .assets .buttons .first {
+  background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+}
+body .main .right .assets .buttons .second {
+  background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+}
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,272 @@
+@import "../fontawesome-free-6.3.0-web/css/fontawesome.min.css";
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: black;
+        color: white;
+        height: 100px;
+
+        .search {
+            width: 70vh;
+            .searchTerm {
+                width: 100%;
+                padding: 5px;
+                height: 40px;
+                border-radius: 15px;
+                outline: none;
+                color: #9DBFAF;
+                }
+        }
+
+    }
+
+    .main {
+
+        display: flex;
+        height: 87vh;
+        width: 100%;
+
+        .left {
+            min-height: 100%;
+            width: 20%;
+            background-color: black;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .controllers {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                .afterFirst{
+                    margin-top: 2em;
+                }
+                .beforeLast {
+                    margin-bottom: 10em;
+                }
+                li {
+                    color: white;
+                    button {
+                        width: 180px;
+                        height: 50px;
+                        border-radius: 15px;
+
+                        background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
+                    }
+
+                    a{
+                        color: white;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+        .mid {
+            min-height: 100%;
+            width: 55%;
+            background-color: black;
+
+            .firstSection{
+                display: flex;
+                align-items: center;
+                gap: 6em;
+
+                .totalBalance{
+                    list-style: none;
+
+                    .balance{
+                        font-size: 22px;
+                        font-weight: 900;
+                        color: white;
+                    }
+                    .btcValue{
+                        font-size: 29px;
+                        font-weight: 700;
+                        color: white;
+                    }
+                    .price{
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: white;
+                    }
+                }
+                .other{
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding-inline: 1em;
+
+                    height: 60px;
+                    width: 400px;
+
+                    background: #292727;
+                    border-radius: 17px;
+
+                    li{
+                        font-size: 22px;
+                        font-weight: 400;
+                        color: white;
+                    }
+                    .portfolio{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        height: 44px;
+                        width: 100px;
+                        background: black;
+                        border-radius: 17px;
+                    }
+                }
+            }
+
+            .secondSection{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1em;
+                margin-right: 0.1em;
+                img{
+                    max-width: 70%;
+                    max-height: 70%;
+                }
+            }
+
+            .thirdSection{
+                .thirdNav{
+                    margin-top: 1em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: white;
+
+                    h2{
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
+                }
+
+                .jsp{
+                    margin-top: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                    div{
+                        color: white;
+                        height: 70px;
+                        background: rgba(32, 35, 43, 0.7);
+                        border-radius: 30px;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+
+                        ul{
+                            list-style: none;
+                        }
+
+                        button{
+                            height: 40px;
+                            width: 80px;
+                            background-color: black;
+                            border-radius: 30px;
+
+                            font-size: 17px;
+                            font-weight: 600;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            min-height: 100%;
+            width: 25%;
+            color: white;
+            background-color: black;
+
+            .transac {
+                height: 50%;
+                h2{
+                    margin-left: 0.3em;
+                }
+                .mainUl{
+                    margin-top: 2em;
+    
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                    color: white;
+                    div{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        color: white;
+                        ul{
+                            color: white;
+                            list-style: none;
+                        }
+                    }
+                }
+            }
+
+            .assets{
+                h2{
+                    margin-top: 0.5em;
+                    margin-left: 0.3em;
+                }
+                .buttons{
+                    margin-top: 0.5em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1em;
+                    width: 100%;
+
+                    button{
+                        width: 90%;
+                        height: 9.5em;
+                        border-radius: 15px;
+                    }
+
+                    .first{
+                        background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+                    }
+                    .second{
+                        background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+                    }
+                }
+            }
+        }
+    }
+}
