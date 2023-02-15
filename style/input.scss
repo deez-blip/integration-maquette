@@ -20,43 +20,63 @@ body {
 
     nav {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         padding: 1rem 2rem;
         background: black;
         color: white;
-        height: 100px;
+        height: 150px;
 
         .search {
-            width: 70vh;
             .searchTerm {
-                width: 100%;
+                width: 420px;
                 padding: 5px;
                 height: 40px;
                 border-radius: 15px;
                 outline: none;
                 color: #9DBFAF;
-                }
+                
+            }
         }
 
+        .rogers{
+            font-size: 35px;
+            width: 100%;
+            font-weight: 500;
+            margin-left: 1.5em;
+        }
+
+        .logo{
+            width: 15%;
+        }
+
+        .notif{
+            margin-left: 3em;
+        }
+
+        .account{
+            margin-left: 15em;
+        }
     }
 
     .main {
 
         display: flex;
-        height: 87vh;
+        height: 112vh;
         width: 100%;
 
         .left {
             min-height: 100%;
             width: 20%;
-            background-color: black;
 
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
 
+            background-color: black;
+
             .controllers {
+                
+                margin-top: 3em;
                 list-style: none;
                 display: flex;
                 flex-direction: column;
@@ -67,22 +87,49 @@ body {
                     margin-top: 2em;
                 }
                 .beforeLast {
-                    margin-bottom: 10em;
+                    margin-bottom: 22em;
                 }
                 li {
                     color: white;
-                    button {
-                        width: 180px;
-                        height: 50px;
-                        border-radius: 15px;
-
-                        background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
+                    display: flex;
+                    justify-content: flex-start;
+                    width: 150px;
+                    gap: 1em;
+                    img{
+                        width: 20%;
                     }
 
                     a{
                         color: white;
                         font-size: 25px;
+                        font-weight: 500;
                     }
+
+                }
+
+                .dashboardButton{
+                    width: 100%;
+                    .dashboard {
+                        height: 60px;
+                        border-radius: 15px;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.5em;
+
+                        padding-inline: 0.5em;
+
+                        background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
+
+                        font-size: 25px;
+                        font-weight: 400;
+
+                        img{
+                            width: 18%;
+                        }
+                    }
+
                 }
             }
         }
@@ -99,21 +146,48 @@ body {
 
                 .totalBalance{
                     list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5em;
 
                     .balance{
-                        font-size: 22px;
+                        font-size: 20px;
                         font-weight: 900;
                         color: white;
-                    }
-                    .btcValue{
-                        font-size: 29px;
-                        font-weight: 700;
-                        color: white;
+
+                        opacity: 0.8;
                     }
                     .price{
-                        font-size: 22px;
+                        font-size: 20px;
                         font-weight: 600;
                         color: white;
+
+                        opacity: 0.7;
+                        margin-bottom: 0.5em;
+                    }
+
+                    ul{
+                        list-style: none;
+                        display: flex;
+                        gap: 0.5em;
+                        .btcValue{
+                            
+                            font-size: 27px;
+                            font-weight: 700;
+                            color: white;
+                        }
+                        .btc{
+                            font-size: 15px;
+                            color: rgb(0, 0, 0);
+
+                            height: 25px;
+                            width: 50px;
+                            border-radius: 8px;
+                            background: yellow;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
                     }
                 }
                 .other{
@@ -124,7 +198,7 @@ body {
                     padding-inline: 1em;
 
                     height: 60px;
-                    width: 400px;
+                    width: 420px;
 
                     background: #292727;
                     border-radius: 17px;
@@ -140,7 +214,7 @@ body {
                         justify-content: center;
 
                         height: 44px;
-                        width: 100px;
+                        width: 130px;
                         background: black;
                         border-radius: 17px;
                     }
@@ -155,13 +229,13 @@ body {
                 margin-top: 1em;
                 margin-right: 0.1em;
                 img{
-                    max-width: 70%;
-                    max-height: 70%;
+                    max-width: 100%;
                 }
             }
 
             .thirdSection{
                 .thirdNav{
+                    margin-inline: 2em;
                     margin-top: 1em;
                     display: flex;
                     align-items: center;
@@ -171,6 +245,14 @@ body {
                     h2{
                         font-size: 22px;
                         font-weight: 700;
+
+                    }
+                    .seeAll{
+                        opacity: 0.7;
+
+                        a{
+                            color: white;
+                        }
                     }
                 }
 
@@ -181,7 +263,7 @@ body {
                     gap: 1em;
                     div{
                         color: white;
-                        height: 70px;
+                        height: 79px;
                         background: rgba(32, 35, 43, 0.7);
                         border-radius: 30px;
 
@@ -215,7 +297,9 @@ body {
             background-color: black;
 
             .transac {
-                height: 50%;
+                height: 47%;
+                margin-left: 1em;
+                margin-top: 1.75em;
                 h2{
                     margin-left: 0.3em;
                 }
@@ -234,14 +318,17 @@ body {
                         ul{
                             color: white;
                             list-style: none;
+
+                            font-size: 19px;
                         }
                     }
                 }
             }
 
             .assets{
+                margin-left: 1em;
                 h2{
-                    margin-top: 0.5em;
+                    margin-top: 1em;
                     margin-left: 0.3em;
                 }
                 .buttons{
@@ -255,15 +342,70 @@ body {
 
                     button{
                         width: 90%;
-                        height: 9.5em;
-                        border-radius: 15px;
+                        height: 170px;
+                        border-radius: 20px;
                     }
 
                     .first{
                         background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+
                     }
                     .second{
                         background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+                    }
+
+                    .content{
+                        height: 95%;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                        gap: 4em;
+
+                        ul{
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: space-around;
+
+                            .bitcoin{
+                                font-size: 19px;
+                                font-weight: 600;
+                                color: white;
+                            }
+                            .amount{
+                                font-size: 27px;
+                                font-weight: 600;
+                                color: white;
+                            }
+
+                            .etherum{
+                                font-size: 19px;
+                                font-weight: 600;
+                                color: rgb(0, 0, 0);
+                            }
+                            .ethamount{
+                                font-size: 27px;
+                                font-weight: 600;
+                                color: rgb(0, 0, 0);
+                            }
+                        }
+
+                        .name{
+                            font-size: 27px;
+                            font-weight: 600;
+                            color: white;
+
+                            margin-right: 1em;
+                        }
+
+                        .eth{
+                            font-size: 27px;
+                            font-weight: 600;
+                            color: black;
+
+                            margin-right: 1em;
+                        }
                     }
                 }
             }
