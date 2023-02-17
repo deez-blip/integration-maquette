@@ -24,7 +24,7 @@ body {
         padding: 1rem 2rem;
         background: black;
         color: white;
-        height: 150px;
+        height: 115px;
 
         .search {
             .searchTerm {
@@ -34,8 +34,17 @@ body {
                 border-radius: 15px;
                 outline: none;
                 color: #9DBFAF;
-                
             }
+            @media screen and (max-width: 501px) {
+                .searchTerm{
+                    width: 300px;
+                }
+              }
+              @media screen and (max-width: 390px) {
+                .searchTerm{
+                    width: 200px;
+                }
+              }
         }
 
         .rogers{
@@ -48,15 +57,39 @@ body {
         .logo{
             width: 15%;
         }
+        @media screen and (max-width: 1001px) {
+            .logo {
+                content: url("../img/Layer\ 2.png");
+            }
+          }
+        
 
         .notif{
             margin-left: 3em;
         }
+        @media screen and (max-width: 1001px) {
+            .notif {
+              display: none;
+            }
+          }
 
         .account{
             margin-left: 15em;
         }
+        @media screen and (max-width: 1151px) {
+            .account {
+              display: none;
+            }
+          }
     }
+    @media screen and (max-width: 651px) {
+        nav{
+            gap: 1.5em;
+            .rogers {
+                display: none;
+              }
+        }
+      }
 
     .main {
 
@@ -65,7 +98,7 @@ body {
         width: 100%;
 
         .left {
-            min-height: 100%;
+            
             width: 20%;
 
             display: flex;
@@ -88,6 +121,11 @@ body {
                 }
                 .beforeLast {
                     margin-bottom: 22em;
+                }
+                @media screen and (max-width: 1301px) {
+                    .beforeLast {
+                        margin-bottom: 14em;
+                    }
                 }
                 li {
                     color: white;
@@ -133,10 +171,30 @@ body {
                 }
             }
         }
-
+        @media screen and (max-width: 651px) {
+            .left{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 801px) {
+            .left {
+              width: 10%;
+              .controllers {
+                .dashboardButton {
+                    display: none;
+                }
+                li {
+                    justify-content: center;
+                    a {
+                        display: none;
+                    }
+                }
+              }
+            }
+          }
         .mid {
-            min-height: 100%;
-            width: 55%;
+            
+            width: 50%;
             background-color: black;
 
             .firstSection{
@@ -220,6 +278,12 @@ body {
                     }
                 }
             }
+            @media screen and (max-width: 1001px) {
+                .firstSection {
+                  flex-direction: column;
+                  gap: 1em;
+                }
+              }
 
             .secondSection{
                 width: 100%;
@@ -229,9 +293,30 @@ body {
                 margin-top: 1em;
                 margin-right: 0.1em;
                 img{
-                    max-width: 100%;
+                    max-width: 95%;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
                 }
+                // .graph{
+                //     background: rgba(48, 53, 65, 0.67);
+                //     width: 95%;
+                //     border-radius: 30px;
+                //     height: 100%;
+
+                //     canvas{
+                //         display: block;
+                //         height: 480px;
+                //         width: 582px;
+                //     }
+                // }
             }
+            @media screen and (max-width: 1001px) {
+                .secondSection{
+                    img{
+                        max-width: 95%;
+                    }
+                }
+              }
 
             .thirdSection{
                 .thirdNav{
@@ -285,19 +370,29 @@ body {
                             font-weight: 600;
                             color: white;
                         }
+
+                        @media screen and (max-width: 1001px) {
+                            .courbe {
+                              display: none;
+                            }
+                          }
                     }
                 }
             }
         }
-
+        @media screen and (max-width: 801px) {
+            .mid {
+              width: 55%;
+            }
+          }
         .right {
-            min-height: 100%;
-            width: 25%;
+            
+            width: 30%;
             color: white;
             background-color: black;
 
             .transac {
-                height: 47%;
+                height: 50%;
                 margin-left: 1em;
                 margin-top: 1.75em;
                 h2{
@@ -321,6 +416,11 @@ body {
 
                             font-size: 19px;
                         }
+                        @media screen and (max-width: 1001px) {
+                            .transacName {
+                                display: none;
+                            }
+                        }
                     }
                 }
             }
@@ -341,8 +441,8 @@ body {
                     width: 100%;
 
                     button{
-                        width: 90%;
-                        height: 170px;
+                        width: 95%;
+                        height: 11em;
                         border-radius: 20px;
                     }
 
@@ -359,7 +459,7 @@ body {
                         display: flex;
                         align-items: flex-end;
                         justify-content: center;
-                        gap: 4em;
+                        gap: 7.5em;
 
                         ul{
                             height: 100%;
@@ -398,6 +498,11 @@ body {
 
                             margin-right: 1em;
                         }
+                        @media screen and (max-width: 1001px) {
+                            .name {
+                              display: none;
+                            }
+                          }
 
                         .eth{
                             font-size: 27px;
@@ -406,9 +511,75 @@ body {
 
                             margin-right: 1em;
                         }
+                        @media screen and (max-width: 1001px) {
+                            .eth {
+                              display: none;
+                            }
+                          }
                     }
                 }
             }
         }
+        @media screen and (max-width: 801px) {
+            .right {
+              width: 35%;
+              .transac{
+                    height: 55%;
+                }
+                .assets{
+                    .buttons{
+                        flex-direction: row;
+                        .first,
+                        .second{
+                            height: 16.5em;
+                        }
+                        .content ul{
+                            align-items: center;
+
+                            .ethamount,
+                            .amount{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+          }
     }
+    @media screen and (max-width: 651px) {
+        .main {
+          flex-direction: column;
+
+          .mid{
+            width: 100%;
+            .firstSection{
+                .other{
+                    width: 90%;
+                }
+            }
+
+            .thirdSection{
+                .jsp{
+                    margin-inline: 0.5em;
+
+                    @media screen and (max-width: 501px) {
+                        .name{
+                            display: none;
+                        }
+                        .courbe {
+                          display: none;
+                        }
+                      }
+                }
+            }
+          }
+          .right{
+            width: 100%;
+            .assets{
+                margin-left: 0;
+                margin-inline: 0.5em;
+            }
+          }
+        }
+      }
 }

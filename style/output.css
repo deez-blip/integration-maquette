@@ -24,7 +24,7 @@ body nav {
   padding: 1rem 2rem;
   background: black;
   color: white;
-  height: 150px;
+  height: 115px;
 }
 body nav .search .searchTerm {
   width: 420px;
@@ -33,6 +33,16 @@ body nav .search .searchTerm {
   border-radius: 15px;
   outline: none;
   color: #9DBFAF;
+}
+@media screen and (max-width: 501px) {
+  body nav .search .searchTerm {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 390px) {
+  body nav .search .searchTerm {
+    width: 200px;
+  }
 }
 body nav .rogers {
   font-size: 35px;
@@ -43,11 +53,34 @@ body nav .rogers {
 body nav .logo {
   width: 15%;
 }
+@media screen and (max-width: 1001px) {
+  body nav .logo {
+    content: url("../img/Layer 2.png");
+  }
+}
 body nav .notif {
   margin-left: 3em;
 }
+@media screen and (max-width: 1001px) {
+  body nav .notif {
+    display: none;
+  }
+}
 body nav .account {
   margin-left: 15em;
+}
+@media screen and (max-width: 1151px) {
+  body nav .account {
+    display: none;
+  }
+}
+@media screen and (max-width: 651px) {
+  body nav {
+    gap: 1.5em;
+  }
+  body nav .rogers {
+    display: none;
+  }
 }
 body .main {
   display: flex;
@@ -55,7 +88,6 @@ body .main {
   width: 100%;
 }
 body .main .left {
-  min-height: 100%;
   width: 20%;
   display: flex;
   align-items: flex-start;
@@ -76,6 +108,11 @@ body .main .left .controllers .afterFirst {
 }
 body .main .left .controllers .beforeLast {
   margin-bottom: 22em;
+}
+@media screen and (max-width: 1301px) {
+  body .main .left .controllers .beforeLast {
+    margin-bottom: 14em;
+  }
 }
 body .main .left .controllers li {
   color: white;
@@ -110,9 +147,27 @@ body .main .left .controllers .dashboardButton .dashboard {
 body .main .left .controllers .dashboardButton .dashboard img {
   width: 18%;
 }
+@media screen and (max-width: 651px) {
+  body .main .left {
+    display: none;
+  }
+}
+@media screen and (max-width: 801px) {
+  body .main .left {
+    width: 10%;
+  }
+  body .main .left .controllers .dashboardButton {
+    display: none;
+  }
+  body .main .left .controllers li {
+    justify-content: center;
+  }
+  body .main .left .controllers li a {
+    display: none;
+  }
+}
 body .main .mid {
-  min-height: 100%;
-  width: 55%;
+  width: 50%;
   background-color: black;
 }
 body .main .mid .firstSection {
@@ -185,6 +240,12 @@ body .main .mid .firstSection .other .portfolio {
   background: black;
   border-radius: 17px;
 }
+@media screen and (max-width: 1001px) {
+  body .main .mid .firstSection {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
 body .main .mid .secondSection {
   width: 100%;
   display: flex;
@@ -194,7 +255,14 @@ body .main .mid .secondSection {
   margin-right: 0.1em;
 }
 body .main .mid .secondSection img {
-  max-width: 100%;
+  max-width: 95%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 1001px) {
+  body .main .mid .secondSection img {
+    max-width: 95%;
+  }
 }
 body .main .mid .thirdSection .thirdNav {
   margin-inline: 2em;
@@ -241,14 +309,23 @@ body .main .mid .thirdSection .jsp div button {
   font-weight: 600;
   color: white;
 }
+@media screen and (max-width: 1001px) {
+  body .main .mid .thirdSection .jsp div .courbe {
+    display: none;
+  }
+}
+@media screen and (max-width: 801px) {
+  body .main .mid {
+    width: 55%;
+  }
+}
 body .main .right {
-  min-height: 100%;
-  width: 25%;
+  width: 30%;
   color: white;
   background-color: black;
 }
 body .main .right .transac {
-  height: 47%;
+  height: 50%;
   margin-left: 1em;
   margin-top: 1.75em;
 }
@@ -273,6 +350,11 @@ body .main .right .transac .mainUl div ul {
   list-style: none;
   font-size: 19px;
 }
+@media screen and (max-width: 1001px) {
+  body .main .right .transac .mainUl div .transacName {
+    display: none;
+  }
+}
 body .main .right .assets {
   margin-left: 1em;
 }
@@ -290,8 +372,8 @@ body .main .right .assets .buttons {
   width: 100%;
 }
 body .main .right .assets .buttons button {
-  width: 90%;
-  height: 170px;
+  width: 95%;
+  height: 11em;
   border-radius: 20px;
 }
 body .main .right .assets .buttons .first {
@@ -305,7 +387,7 @@ body .main .right .assets .buttons .content {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 4em;
+  gap: 7.5em;
 }
 body .main .right .assets .buttons .content ul {
   height: 100%;
@@ -340,11 +422,74 @@ body .main .right .assets .buttons .content .name {
   color: white;
   margin-right: 1em;
 }
+@media screen and (max-width: 1001px) {
+  body .main .right .assets .buttons .content .name {
+    display: none;
+  }
+}
 body .main .right .assets .buttons .content .eth {
   font-size: 27px;
   font-weight: 600;
   color: black;
   margin-right: 1em;
+}
+@media screen and (max-width: 1001px) {
+  body .main .right .assets .buttons .content .eth {
+    display: none;
+  }
+}
+@media screen and (max-width: 801px) {
+  body .main .right {
+    width: 35%;
+  }
+  body .main .right .transac {
+    height: 55%;
+  }
+  body .main .right .assets .buttons {
+    flex-direction: row;
+  }
+  body .main .right .assets .buttons .first,
+body .main .right .assets .buttons .second {
+    height: 16.5em;
+  }
+  body .main .right .assets .buttons .content ul {
+    align-items: center;
+  }
+  body .main .right .assets .buttons .content ul .ethamount,
+body .main .right .assets .buttons .content ul .amount {
+    display: none;
+  }
+}
+@media screen and (max-width: 651px) {
+  body .main {
+    flex-direction: column;
+  }
+  body .main .mid {
+    width: 100%;
+  }
+  body .main .mid .firstSection .other {
+    width: 90%;
+  }
+  body .main .mid .thirdSection .jsp {
+    margin-inline: 0.5em;
+  }
+}
+@media screen and (max-width: 651px) and (max-width: 501px) {
+  body .main .mid .thirdSection .jsp .name {
+    display: none;
+  }
+  body .main .mid .thirdSection .jsp .courbe {
+    display: none;
+  }
+}
+@media screen and (max-width: 651px) {
+  body .main .right {
+    width: 100%;
+  }
+  body .main .right .assets {
+    margin-left: 0;
+    margin-inline: 0.5em;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
